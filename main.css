@@ -1,7 +1,14 @@
 body {
-    background-color: #fff;
-    color: #2e3440;
+    background-color: #2e3440;
+    color: #dae8dd;
     font-size: 14pt;
-    font-family: "Nunito", sans-serif;
-    overflow-x:hidden
+    font-family: "Monaco", sans-serif;
+    overflow-x: hidden;
+    max-width: 780px;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-top: 2rem;
+    line-height: 1;
 }
