@@ -1,6 +1,14 @@
+:root {
+  --blue-gray: #2e3440;
+  --green-white: #dae8dd;
+  --light-blue: #81a1c1;
+  --light-green: #86c181;
+  --dark-green: #31b526;
+}
+
 body {
-    background-color: #2e3440;
-    color: #dae8dd;
+    background-color: var(--blue-gray);
+    color: var(--green-white);
     font-size: 14pt;
     font-family: "Monaco", sans-serif;
     overflow-x: hidden;
@@ -11,4 +19,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
     padding-top: 2rem;
     line-height: 1;
+}
+
+a:link {
+    color: var(--light-green);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--dark-green);
+    text-decoration: none;
 }
