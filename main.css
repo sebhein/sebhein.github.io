@@ -36,10 +36,4 @@ a:visited {
   margin: 1rem;
   padding-left: 1rem;
   border-left: 1px solid var(--light-blue);
-  border-width: 0 1px 0 0;
-  border-style: solid;
-  -webkit-border-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1), var(--green-white), rgba(0, 0, 0, 1));
-  -moz-border-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1), var(--green-white), rgba(0, 0, 0, 1));
-  -o-border-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 1), var(--green-white), rgba(0, 0, 0, 1));
-  border-image: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--green-white), rgba(0, 0, 0, 1));
 }
