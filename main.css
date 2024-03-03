@@ -32,7 +32,7 @@ a:visited {
 }
 
 .resume-section {
-    color: var(--dark-green);
+  color: var(--dark-green);
 }
 
 .resume-subsection {
@@ -41,6 +41,7 @@ a:visited {
 
 .resume-section li {
   font-size: 10pt;
+  color: var(--green-white);
 }
 
 .resume-outline {
