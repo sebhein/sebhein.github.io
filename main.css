@@ -31,17 +31,16 @@ a:visited {
   text-decoration: none;
 }
 
-.resume-section {
+.resume-section-title {
   color: var(--dark-green);
 }
 
-.resume-subsection {
+.resume-subsection li {
   color: var(--light-green);
 }
 
-.resume-section li {
+.resume-section ul {
   font-size: 10pt;
-  color: var(--green-white);
 }
 
 .resume-outline {
