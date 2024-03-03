@@ -7,30 +7,38 @@
 }
 
 body {
-    background-color: var(--blue-gray);
-    color: var(--green-white);
-    font-size: 14pt;
-    font-family: "Monaco", sans-serif;
-    overflow-x: hidden;
-    max-width: 780px;
-    margin: auto;
+  background-color: var(--blue-gray);
+  color: var(--green-white);
+  font-size: 14pt;
+  font-family: "Monaco", sans-serif;
+  overflow-x: hidden;
+  max-width: 780px;
+  margin: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    padding-top: 2rem;
-    line-height: 1;
+  padding-top: 2rem;
+  line-height: 1;
 }
 
 a:link {
-    color: var(--light-green);
-    text-decoration: none;
+  color: var(--light-green);
+  text-decoration: none;
 }
 
 a:visited {
-    color: var(--dark-green);
-    text-decoration: none;
+  color: var(--dark-green);
+  text-decoration: none;
 }
 
+.resume-section {
+    color: var(--dark-green);
+}
+
+.resume-section li {
+  font-size: 10pt;
+  color: var(--light-green);
+}
 
 .resume-outline {
   margin: 1rem;
