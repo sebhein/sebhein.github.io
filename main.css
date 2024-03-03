@@ -35,11 +35,11 @@ a:visited {
   color: var(--dark-green);
 }
 
-.resume-subsection li {
+.resume-subsection {
   color: var(--light-green);
 }
 
-.resume-section ul {
+.resume-section {
   font-size: 10pt;
 }
 
