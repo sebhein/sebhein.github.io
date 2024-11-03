@@ -658,6 +658,10 @@ html {
   margin-top: 4rem;
 }
 
+.inline{
+  display: inline;
+}
+
 .flex{
   display: flex;
 }
