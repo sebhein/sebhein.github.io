@@ -874,3 +874,14 @@ html {
   --tw-text-opacity: 1;
   color: rgb(243 199 177 / var(--tw-text-opacity));
 }
+
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:text-primary-50:hover{
+  --tw-text-opacity: 1;
+  color: rgb(241 246 243 / var(--tw-text-opacity));
+}

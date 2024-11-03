@@ -10,7 +10,9 @@
     return `
     <nav class="bg-primary-800/50 border-b border-accent-400 px-4 py-3">
       <div class="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 id="bass.codes" class="text-primary-100 text-xl font-bold">bass.codes</h1>
+        <a href="/" class="hover:text-primary-50 transition-colors">
+          <h1 id="bass.codes" class="text-primary-100 text-xl font-bold">bass.codes</h1>
+        </a>
         <div class="space-x-4">
           <!-- Navigation items will be injected -->
         </div>
