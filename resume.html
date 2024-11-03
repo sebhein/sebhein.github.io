@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-primary-900 text-primary-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Bass - Resume</title>
+    <link href="./styles/output.css" rel="stylesheet">
+</head>
+<body class="min-h-screen font-mono">
+    <!-- Navigation -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-16">
+        <h1 class="text-4xl font-bold text-primary-100 mb-12">Resume</h1>
+        
+        <div class="space-y-12">
+            <!-- iManage Section -->
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold text-primary-200">
+                    iManage - Staff Software Engineer
+                    <span class="text-accent-400 ml-2">02-2021 - Present</span>
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl text-primary-300 mb-2">Significant Projects</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-primary-200">
+                            <li>Advised and subsequently led design and implementation of 22 month long project to revise a core data model underpinning the application. Team consisted of 3 to 5 developers from frontend and backend teams. Migrated ~50 million rows across 18 tables, relocating ~100 million AWS S3 objects</li>
+                            <li>[WIP] Developing a novel way to detect signatures within documents using classic image recognition techniques, natural language processing classification, and large language models.</li>
+                            <li>[WIP] Leading team of two other developers to improve performance and scalability of user workspaces. Requires identifying areas in the application that are susceptible to failing when scaled up, coming up with solutions for said problems, and managing the implementation of those solutions</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl text-primary-300 mb-2">Performance and Optimizations</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-primary-200">
+                            <li>Ported AWS Lambda implementation from JavaScript to Python, reducing billed duration and total cost of the Lambda by 47%</li>
+                            <li>Identified and improved invocation of hot asynchronous job by implementing a push strategy to replace a polling strategy. Reduced total runtime 29% and cut number job invocations by 51%</li>
+                            <li>Reduced run time of long running document scanning job from 80+ seconds to ~20 seconds</li>
+                            <li>Found a number of areas which invoked "n + 1" queries, refactoring code to perform a constant number of queries reduced load on the database improving API response times</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl text-primary-300 mb-2">DevOps</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-primary-200">
+                            <li>Added structured logging, enabling developers to trace a thread through related log messages improving developers ability to debug and provide support</li>
+                            <li>Worked on CI/CD runtime by sharding test suite and running tests concurrently (leveraging Pants Build concepts), improved runtime from ~25 minutes to ~10 minutes</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl text-primary-300 mb-2">Awards</h3>
+                        <ul class="list-disc pl-6 text-primary-200">
+                            <li>iManage Engineering Execution Excellence Award (2023)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Closing Folders Section -->
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold text-primary-200">
+                    Closing Folders - Software Engineer Intern
+                    <span class="text-accent-400 ml-2">05-2019 - 08-2020</span>
+                </h2>
+                <ul class="list-disc pl-6 space-y-2 text-primary-200">
+                    <li>Added third party integration for a digital signing provider to capture new client sale</li>
+                    <li>Upgraded code from Python 2.7 to 3.8, this helped develop a better understanding and appreciation of Python internals</li>
+                    <li>Built developer tools to create custom client html templates for rendering PDF files</li>
+                    <li>Migrated codebase to a monorepo using the Pants Build system, requiring the team to untangle a number of dependencies by restructuring and dependency injection</li>
+                </ul>
+            </section>
+
+            <!-- University of Toronto Section -->
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold text-primary-200">
+                    University of Toronto - Student
+                    <span class="text-accent-400 ml-2">09-2016 - 05-2021</span>
+                </h2>
+                <div class="space-y-2 text-primary-200">
+                    <p>Graduated with Honours Bachelor of Science</p>
+                    <h3 class="text-xl text-primary-300">Studied</h3>
+                    <ul class="list-disc pl-6">
+                        <li>Computer Science - Major</li>
+                        <li>Cognitive Science - Major</li>
+                        <li>Mathematics - Minor</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Earlier Experience -->
+            <section class="space-y-8">
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-semibold text-primary-200">
+                        Independent Contractor
+                        <span class="text-accent-400 ml-2">03-2016 - 08-2016</span>
+                    </h2>
+                    <ul class="list-disc pl-6 text-primary-200">
+                        <li>Built landing and splash pages for a German speaking asset management firm</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-semibold text-primary-200">
+                        Boat Locker
+                        <span class="text-accent-400 ml-2">05-2013 - 05-2016</span>
+                    </h2>
+                    <ul class="list-disc pl-6 text-primary-200">
+                        <li>Helped build new website on the Magento platform</li>
+                        <li>Migrated inventory systems, sanitizing inventory data using custom Excel scripts</li>
+                        <li>Integrated with third party online market places such as Amazon and eBay to create a new $100,000 revenue stream</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold text-primary-200">Projects</h2>
+                <ul class="list-disc pl-6 space-y-2 text-primary-200">
+                    <li>Used JavaScript to visualise a multiple job queueing system, it was meant to model and convey problems we were experiencing at work</li>
+                    <li>Built a Neovim plugin using the Lua programming language to run individual tests and markup the file with test results</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Footer with abbreviations -->
+        <footer class="mt-16 pt-8 border-t border-primary-700 text-primary-400 text-sm">
+            <p class="leading-relaxed">
+                API = Application Programming Interface | AWS = Amazon Web Services | 
+                CI/CD = Continuous Integration / Continuous Development | 
+                PDF = Portable Document Format | S3 = Simple Storage Service | 
+                WIP = Work in Progress
+            </p>
+        </footer>
+    </main>
+
+    <script src="./dist/bundle.js"></script>
+</body>
+</html>
