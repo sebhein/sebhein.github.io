@@ -8,7 +8,7 @@
   ];
   function createNavigation() {
     return `
-    <nav class="p-4 bg-primary-900">
+    <nav class="bg-primary-800/50 border-b border-accent-400 px-4 py-3">
       <div class="max-w-6xl mx-auto flex justify-between items-center">
         <h1 id="bass.codes" class="text-primary-100 text-xl font-bold">bass.codes</h1>
         <div class="space-x-4">

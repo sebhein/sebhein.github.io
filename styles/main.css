@@ -22,4 +22,23 @@
   .btn-primary {
     @apply text-primary-300 hover:text-primary-100 transition-colors inline-flex items-center space-x-2;
   }
+
+   /* Abbreviation component */
+  .abbr {
+    @apply relative inline-block text-primary-300 cursor-help w-min whitespace-nowrap transition-[width];
+    border-bottom: 1px dotted rgb(159, 192, 174); /* primary-300 */
+  }
+
+  .abbr::before {
+    content: attr(data-abbreviated);
+  }
+
+  .abbr:hover {
+    width: var(--expanded-width);
+    @apply text-primary-100;
+  }
+
+  .abbr:hover::before {
+    content: attr(data-expanded);
+  }
 }
