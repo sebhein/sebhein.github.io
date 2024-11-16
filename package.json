@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "home of bass.codes",
   "scripts": {
-    "dev:css": "tailwindcss -i ./styles/main.css -o ./styles/output.css --watch",
-    "dev:ts": "esbuild src/main.ts --bundle --outfile=dist/bundle.js --watch",
+    "dev:css": "node scripts/watch-css.js",
+    "dev:ts": "node scripts/watch-ts.js",
     "serve": "browser-sync start --server --files 'dist/*.js, styles/*.css, **/*.html' --host 127.0.0.1 --port 8080 --no-open --no-notify --no-ghost-mode",
     "dev": "concurrently \"npm run dev:css\" \"npm run dev:ts\" \"npm run serve\""
   },

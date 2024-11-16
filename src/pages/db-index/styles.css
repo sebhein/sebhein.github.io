@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Database Animation Container */
+  .db-animation-container {
+    @apply flex flex-col items-center p-8 font-mono text-primary-100 gap-8;
+  }
+
+  .db-animation-viz {
+    @apply flex justify-around w-full gap-8;
+  }
+
+  .db-animation-section {
+    @apply flex-1 max-w-[400px];
+  }
+
+  .db-animation-title {
+    @apply text-center text-primary-300 mb-4 text-lg;
+  }
+
+  /* Table Styles */
+  .db-animation-table {
+    @apply bg-primary-800 border border-primary-600 rounded overflow-hidden;
+  }
+
+  .db-animation-row {
+    @apply grid grid-cols-3 border-b border-primary-600 h-10 items-center px-4 transition-all duration-300;
+  }
+
+  .db-animation-row:last-child {
+    @apply border-b-0;
+  }
+
+  .db-animation-header {
+    @apply text-accent-400 font-semibold bg-primary-900/50;
+  }
+
+  .db-animation-cell {
+    @apply text-center transition-colors duration-300;
+  }
+
+  .db-animation-row:not(.db-animation-header):hover {
+    @apply bg-primary-700/50;
+  }
+
+  /* Active States */
+  .db-animation-row.highlight {
+    @apply bg-accent-500/20;
+  }
+
+  /* Description and Controls */
+  .db-animation-description {
+    @apply mt-4 text-primary-300 text-sm text-center min-h-[2.5em];
+  }
+
+  .db-animation-controls {
+    @apply flex gap-4 mt-8;
+  }
+
+  .db-animation-button {
+    @apply bg-primary-600 border border-primary-400 text-primary-100 
+           px-4 py-2 rounded cursor-pointer transition-all
+           hover:bg-primary-500 disabled:bg-primary-800 
+           disabled:border-primary-600 disabled:cursor-not-allowed 
+           disabled:opacity-50;
+  }
+
+  .db-animation-status {
+    @apply mt-4 text-primary-300 text-center min-h-[1.2em];
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/pages/db-index/script.ts"],
+  "sourcesContent": ["/// <reference lib=\"dom\" />\n/// <reference lib=\"dom.iterable\" />\n\ninterface AnimationStep {\n\taction: () => void;\n\tmessage: string;\n}\n\nclass DbAnimation {\n\tprivate tableRows: HTMLElement [];\n\tprivate status: HTMLElement;\n\n\tconstructor() {\n\t\tthis.tableRows = Array.from(document.querySelectorAll('.db-animation-row')).filter(row => !row.classList.contains('db-animation-header'));\n\t\tconsole.log(this.tableRows);\n\t}\n}\n\n// Initialize when DOM is loaded\ndocument.addEventListener('DOMContentLoaded', () => {\n  new DbAnimation();\n});\n"],
+  "mappings": ";;;AAQA,MAAM,cAAN,MAAkB;AAAA,IAIjB,cAAc;AACb,WAAK,YAAY,MAAM,KAAK,SAAS,iBAAiB,mBAAmB,CAAC,EAAE,OAAO,SAAO,CAAC,IAAI,UAAU,SAAS,qBAAqB,CAAC;AACxI,cAAQ,IAAI,KAAK,SAAS;AAAA,IAC3B;AAAA,EACD;AAGA,WAAS,iBAAiB,oBAAoB,MAAM;AAClD,QAAI,YAAY;AAAA,EAClB,CAAC;",
+  "names": []
+}
