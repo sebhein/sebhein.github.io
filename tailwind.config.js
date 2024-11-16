@@ -5,7 +5,10 @@ module.exports = {
   content: [
     "./*.html",
     "./src/**/*.{js,ts}",
-    "./dist/**/*.js"
+    "./dist/**/*.js",
+    "./styles/**/*.css",
+    "./resume/**/*.html",
+    "./db-index/**/*.html",
   ],
   theme: {
     extend: {

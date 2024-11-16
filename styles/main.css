@@ -8,6 +8,18 @@
   html {
     font-family: 'IBM Plex Mono', monospace;
   }
+
+  body {
+    @apply bg-primary-900 text-primary-100 min-h-screen font-mono;
+  }
+
+  main {
+    @apply max-w-6xl mx-auto px-4 py-16;
+  }
+
+  h1 {
+    @apply text-4xl font-bold text-primary-100 mb-12;
+  }
 }
 
 @layer components {
@@ -41,4 +53,115 @@
   .abbr:hover::before {
     content: attr(data-expanded);
   }
+
+  /* Code Blocks */
+
+  .code-block {
+    @apply font-mono bg-black/90 rounded-md p-4 my-4 border border-primary-600 overflow-x-auto text-sm;
+  }
+
+  .code-content {
+    @apply whitespace-pre;
+    margin-left: -8rem;
+  }
+
+  .code-comment {
+    @apply text-primary-400 opacity-75;
+  }
+
+  .code-keyword {
+    @apply text-accent-300;
+  }
+
+  /* Database Animation */
+  .db-animation-container {
+    @apply flex flex-col items-center p-8 font-mono text-primary-100 gap-8;
+  }
+
+  .db-animation-viz {
+    @apply flex justify-around w-full gap-8;
+  }
+
+  .db-animation-section {
+    @apply flex-1 max-w-[400px];
+  }
+
+  .db-animation-title {
+    @apply text-center text-primary-300 mb-4 text-lg;
+  }
+
+  .db-animation-table {
+    @apply bg-primary-800 border border-primary-600 rounded overflow-hidden;
+  }
+
+  .db-animation-row {
+    @apply flex border-b border-primary-600 h-10 items-center px-4 transition-colors grid grid-cols-3;
+  }
+
+  .db-animation-header {
+    @apply text-accent-400
+  }
+
+  .db-animation-row:last-child {
+    @apply border-b-0;
+  }
+
+  .db-animation-cell {
+    @apply text-center;
+  }
+
+  .db-animation-id {
+    @apply w-[50px] text-accent-400;
+  }
+
+  .db-animation-index {
+    @apply w-[100px] mb-4 bg-primary-900 border border-primary-600 rounded;
+  }
+
+  .db-animation-search-indicator {
+    @apply absolute -left-5 text-accent-500 font-bold opacity-0 transition-all duration-300;
+  }
+
+  .db-animation-search-indicator.visible {
+    @apply opacity-100;
+  }
+
+  .db-animation-row.highlight {
+    @apply bg-primary-600;
+  }
+
+  .db-animation-description {
+    @apply mt-4 text-primary-300 text-sm text-center min-h-[2.5em];
+  }
+
+  .db-animation-controls {
+    @apply flex gap-4 mt-8;
+  }
+
+  .db-animation-button {
+    @apply bg-primary-600 border border-primary-400 text-primary-100 
+           px-4 py-2 rounded cursor-pointer transition-all
+           hover:bg-primary-500 disabled:bg-primary-800 
+           disabled:border-primary-600 disabled:cursor-not-allowed 
+           disabled:opacity-50;
+  }
+
+  .db-animation-status {
+    @apply mt-4 text-primary-300 text-center min-h-[1.2em];
+  }
+
+  /* Animation keyframes if needed */
+  @keyframes searchNonIndexed {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(40px); }
+    40% { transform: translateY(80px); }
+    60% { transform: translateY(120px); }
+    80% { transform: translateY(160px); }
+    100% { transform: translateY(80px); }
+  }
+
+  @keyframes searchIndexed {
+    0% { transform: translateY(0); }
+    50%, 100% { transform: translateY(80px); }
+  } 
 }
