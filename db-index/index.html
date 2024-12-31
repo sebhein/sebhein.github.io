@@ -90,19 +90,21 @@
             </div>
             
             <div class="db-animation-section">
-                <div class="code-block"><div class="code-content">
-                    <span class="code-comment">-- Sequential scan of entire table</span>
-                    <span class="code-keyword">SELECT</span> * <span class="code-keyword">FROM</span> users
-                    <span class="code-keyword">WHERE</span> name = 'Maelcum';
-                </div></div>
+              <div class="code-block">
+                <div class="code-content">
+                  <span class="code-comment">-- Sequential scan of entire table</span>
+                  <span class="code-keyword">SELECT</span> * <span class="code-keyword">FROM</span> users
+                  <span class="code-keyword">WHERE</span> name = 'Maelcum';<span class="code-enter">I</span>
+                </div>
+              </div>
+
+              <div class="db-animation-controls">
+                <button class="db-animation-button" id="nextBtn">Next Step</button>
+                <button class="db-animation-button" id="resetBtn">Reset</button>
+              </div>
+              <div class="db-animation-status" id="status">Click Next to start the demonstration</div>
             </div>
           </div>
-
-          <div class="db-animation-controls">
-            <button class="db-animation-button" id="nextBtn">Next Step</button>
-            <button class="db-animation-button" id="resetBtn">Reset</button>
-          </div>
-          <div class="db-animation-status" id="status">Click Next to start the demonstration</div>
 
     </main>
 

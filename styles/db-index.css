@@ -633,6 +633,10 @@ video {
   transition-duration: 300ms;
 }
 
+.db-animation-cell.flash {
+  animation: flash 0.5s ease;
+}
+
 .db-animation-row:not(.db-animation-header):hover {
   background-color: rgb(64 90 76 / 0.5);
 }
