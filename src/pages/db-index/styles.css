@@ -17,7 +17,7 @@
   }
 
   .db-animation-title {
-    @apply text-center text-primary-300 mb-4 text-lg;
+    @apply text-center text-primary-300 text-lg;
   }
 
   /* Table Styles */
@@ -52,7 +52,7 @@
 
   /* Description and Controls */
   .db-animation-description {
-    @apply mt-4 text-primary-300 text-sm text-center min-h-[2.5em];
+    @apply text-primary-300 text-sm text-center min-h-[2.5em];
   }
 
   .db-animation-controls {

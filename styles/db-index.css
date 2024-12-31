@@ -554,6 +554,40 @@ video {
   display: none;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 /* Database Animation Container */
 
 .db-animation-container {
@@ -580,7 +614,6 @@ video {
 }
 
 .db-animation-title {
-  margin-bottom: 1rem;
   text-align: center;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -633,10 +666,6 @@ video {
   transition-duration: 300ms;
 }
 
-.db-animation-cell.flash {
-  animation: flash 0.5s ease;
-}
-
 .db-animation-row:not(.db-animation-header):hover {
   background-color: rgb(64 90 76 / 0.5);
 }
@@ -650,7 +679,6 @@ video {
 /* Description and Controls */
 
 .db-animation-description {
-  margin-top: 1rem;
   min-height: 2.5em;
   text-align: center;
   font-size: 0.875rem;
