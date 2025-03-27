@@ -27,7 +27,7 @@ const pages = fs.readdirSync(pagesDir);
 pages.forEach(page => {
     const cssPath = path.join(pagesDir, page, 'styles.css');
     if (fs.existsSync(cssPath)) {
-        console.log(`Starting watcher for ${page}`);
+        console.log(`Starting watcher for ${cssPath}`);
         spawn(tailwindBin, [
             '-i', cssPath,
             '-o', path.join(rootDir, 'styles', `${page}.css`),
